@@ -11,4 +11,4 @@ class Writer:
         for product in payload:
             with open(self.file, "a") as csv_file:
                 writer = csv.writer(csv_file)
-                writer.writerow([ product["name"], product["image"], product["price"] ])
+                writer.writerow([ product["name"], product["price"] ])
